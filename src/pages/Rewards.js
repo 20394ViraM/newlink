@@ -6,10 +6,10 @@ import RewardFetcher from '../fetchApi/RewardFetcher';
 
 
 function Rewards() {
-  const [ rewardsData, setRewardsData] = useState([]);
+  const [ rewardsData, setData] = useState([]);
 
   const handleDataUpdate = (data) => {
-    setRewardsData(data);
+    setData(data);
   };
 
   return (
@@ -17,7 +17,7 @@ function Rewards() {
       <h1>Reward Points</h1>
       
       <RewardFetcher
-       setRewardsData={handleDataUpdate}
+       setData={handleDataUpdate}
       />
       <div className="card-container">
       {rewardsData.map((reward) => (

@@ -1,18 +1,22 @@
 import { useEffect } from 'react';
 
-function CustomerFetcher({ setCustomerData }) {
+function CustomerFetcher({ setCustomersData }) {
+
   useEffect(() => {
+    
     const getCustomers = () => {
       // Fetch customer data from 'API Link'/file
-      fetch('../data/customers.json')
+      fetch('data/customers.json')
         .then((response) => response.json()) // Parse the response as JSON
         .then((customer) => {
-          setCustomerData(customer); //update the data using the 'set' 
+          setCustomersData(customer);
         })
         .catch((error) => console.error(error));
     };
+    console.log('./data/customers.json');
     getCustomers();
-  }, [setCustomerData]);
+  }, [setCustomersData]);
+
   return null;
 }
 

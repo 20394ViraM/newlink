@@ -14,7 +14,7 @@ function Transactions() {
       {purchase.length > 0 ? (
         <CustomTable headers={tableHeaders} data={purchase} />
       ) : (
-        < TransactionFetcher setPurchaseData={setPurchase} id="transaction-fetcher" />
+        < TransactionFetcher setPurchaseData={setPurchase} />
       )}
     </div>
   );

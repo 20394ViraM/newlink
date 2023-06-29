@@ -19,5 +19,4 @@ describe('Customers component', () => {
     expect(noCustomerstext).toBeInTheDocument();
   });
 
-
 });

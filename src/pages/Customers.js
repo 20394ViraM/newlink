@@ -10,7 +10,7 @@ function Customers() {
   return (
     <div>
       <h1>Customers</h1>
-      <CustomerFetcher setCustomerData={setCustomers}/>
+      <CustomerFetcher setCustomersData={setCustomers}/>
       {customers.length > 0 ? (
         <CustomTable headers={tableHeaders} data={customers} />
       ) : (

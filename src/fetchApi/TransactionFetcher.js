@@ -5,11 +5,11 @@ function TransactionFetcher({ setPurchaseData }) {
 
   useEffect(() => {
     // Fetch transactions data from 'API Link'/file
-    fetch('../data/transactions.json')
+    fetch('data/transactions.json')
       .then((response) => response.json())
       .then((data) => {
         // Fetch customer data from 'API Link'/file
-        fetch('../data/customers.json')
+        fetch('data/customers.json')
           .then((response) => response.json())
           .then((customers) => {
             //Map the transaction data with customer details to get customer name

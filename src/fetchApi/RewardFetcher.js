@@ -1,27 +1,29 @@
 import { useEffect, useState } from 'react';
 import "../style/base.css"
 
-function RewardFetcher({ setRewardsData }) {
-  const [rewardsData, setRewards] = useState([]);
+function RewardFetcher({ setData }) {
+  //state to store reward data and month selected
+  const [rewardsData, setRewardsData] = useState([]);
   const [selectedMonth, setSelectedMonth] = useState('');
 
   useEffect(() => {
-    // Fetch transactions data from an API
-    fetch('../data/transactions.json')
+    // Fetch transactions data from 'API Link'/file
+    fetch('data/transactions.json')
       .then((response) => response.json())
       .then((transactions) => {
-        // Fetch customers data from an API
+        // Fetch customer data from 'API Link'/file
         fetch('../data/customers.json')
           .then((response) => response.json())
           .then((customers) => {
             const rewardsData = calculateRewards(customers, transactions);
             setRewardsData(rewardsData);
-           
+            setData(rewardsData);
           })
           .catch((error) => console.error(error));
       })
       .catch((error) => console.error(error));
-  }, [setRewardsData]);
+  }, [setData]);
+
 
   // Calculate rewards for each customer based on their transactions
   const calculateRewards = (customers, transactions) => {
