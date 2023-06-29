@@ -1,0 +1,81 @@
+[
+    {
+        "id": 100011,
+        "customer_id": 1,
+        "purchase_value": 70,
+        "month": "January"
+    },
+    {
+        "id": 100012,
+        "customer_id": 1,
+        "purchase_value": 60,
+        "month": "February"
+    },
+    {
+        "id": 100013,
+        "customer_id": 2,
+        "purchase_value": 30,
+        "month": "January"
+    },
+    {
+        "id": 100014,
+        "customer_id": 4,
+        "purchase_value": 101,
+        "month": "January"
+    },
+    {
+        "id": 100015,
+        "customer_id": 3,
+        "purchase_value": 70,
+        "month": "February"
+    },
+    {
+        "id": 100016,
+        "customer_id": 1,
+        "purchase_value": 70,
+        "month": "February"
+    },
+    {
+        "id": 100017,
+        "customer_id": 4,
+        "purchase_value": 60,
+        "month": "February"
+    },
+    {
+        "id": 100018,
+        "customer_id": 4,
+        "purchase_value": 90,
+        "month": "February"
+    },
+    {
+        "id": 100019,
+        "customer_id": 1,
+        "purchase_value": 70,
+        "month": "February"
+    },
+    {
+        "id": 100020,
+        "customer_id": 2,
+        "purchase_value": 70,
+        "month": "March"
+    },
+    {
+        "id": 100021,
+        "customer_id": 6,
+        "purchase_value": 170,
+        "month": "March"
+    },
+    {
+        "id": 100022,
+        "customer_id": 3,
+        "purchase_value": 80,
+        "month": "March"
+    },
+    {
+        "id": 100023,
+        "customer_id": 5,
+        "purchase_value": 70,
+        "month": "March"
+    }
+
+]

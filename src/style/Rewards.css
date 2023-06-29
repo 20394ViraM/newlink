@@ -1,0 +1,39 @@
+.reward-card{
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px 4px rgba(1 , 28, 64, 0.3);
+}
+
+.reward-card h4 {
+    font-size: 25px;
+    font-style:unset;
+    color: #011C40;
+}
+
+.reward-card p {
+    font-size: 15px;
+}
+
+hr {
+    margin: 10px 0px;
+}
+
+.reward-card h3 {
+    font-size: 30px;
+    font-style:unset;
+    background-color: #011C40;
+    padding: 5px;
+    border-radius: 3px;
+    color: beige;
+    align-items: center;
+}
+
+.card-container{
+    margin-left: 15%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
